@@ -12,10 +12,12 @@ public class Order {
         this.quantity = quantity;
         this.unitPrice = unitPrice;
     }
+
     public double calculateAmount() {
         double amount = quantity * unitPrice;
         return amount;
     }
+    
     public void showSummary() {
         System.out.println("Order Code: " + code);
         System.out.println("Product: " + product);
