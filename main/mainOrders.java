@@ -13,6 +13,6 @@ public class mainOrders {
         order3.showSummary();
 
         double totalPrice = order1.calculateAmount() + order2.calculateAmount() + order3.calculateAmount();
-        System.out.println("Total price of all orders: " + totalPrice);
+        System.out.printf("Total price of all orders: %.2f", totalPrice);
     }
 }

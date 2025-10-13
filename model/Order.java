@@ -21,7 +21,7 @@ public class Order {
         System.out.println("Product: " + product);
         System.out.println("Quantity: " + quantity);
         System.out.println("Unit Price: " + unitPrice);
-        System.out.println("Total Amount: " + calculateAmount());
+        System.out.printf("Total Amount: %.2f%n", calculateAmount());
         System.out.println("-------------------------");
     }
 }
