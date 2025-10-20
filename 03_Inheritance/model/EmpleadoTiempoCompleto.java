@@ -1,8 +1,14 @@
-package 03_Inheritance.model;
+package model;
 
 public class EmpleadoTiempoCompleto extends Empleado {
     private int horasTrabajadas;
     private double tarifaHora;
+
+    public EmpleadoTiempoCompleto(String nombre, double salarioBase, int horasTrabajadas, double tarifaHora) {
+        super(nombre, salarioBase);
+        this.horasTrabajadas = horasTrabajadas;
+        this.tarifaHora = tarifaHora;
+    }
 
     @Override
     public double calcularSalario() {

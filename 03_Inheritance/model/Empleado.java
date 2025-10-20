@@ -1,10 +1,10 @@
-package 03_Inheritance.model;
+package model;
 
 public class Empleado {
-    private string nombre;
+    private String nombre;
     private double salarioBase = 0;
 
-    public Empleado(string nombre, double salarioBase) {
+    public Empleado(String nombre, double salarioBase) {
         this.nombre = nombre;
         this.salarioBase = salarioBase;
     }
