@@ -1,9 +1,8 @@
-//package model;
+package model;
 
 public class Pajaro extends Animal {
     public Pajaro(String nombre, int edad) {
-        super(nombre);
-        super(edad);
+        super(nombre, edad);
     }
 
     @Override
@@ -11,7 +10,8 @@ public class Pajaro extends Animal {
         System.out.println(nombre + " dice: Pío pío!");
     }
 
-    void volar() {
-        System.out.println(nombre + " puede volar.");
+    @Override
+    public void volar() {
+        System.out.println(nombre + " está volando.");
     }
 }

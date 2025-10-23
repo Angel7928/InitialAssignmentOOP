@@ -1,9 +1,8 @@
-//package model;
+package model;
 
 public class Perro extends Animal {
     public Perro(String nombre, int edad) {
-        super(nombre);
-        super(edad);
+        super(nombre, edad);
     }
 
     @Override
